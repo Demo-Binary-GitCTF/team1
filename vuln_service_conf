@@ -1,0 +1,11 @@
+service vuln_service_conf
+{
+    flags = REUSE
+    socket_type = stream
+    wait = no
+    user = vuln
+    server = /service/vuln
+    server_args = 
+    disable = no
+    port = 1000
+}
